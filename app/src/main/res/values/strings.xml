@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Github Stargazers</string>
+
+    <string name="enter_the_owner_name">enter the owner name…</string>
+    <string name="enter_the_repo_name">enter the repo name…</string>
+    <string name="submit">submit</string>
+    <string name="load_more">Load More</string>
+    <string name="no_stargazers_found">No stargazers found!</string>
+</resources>
