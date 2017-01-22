@@ -51,7 +51,6 @@ public class StargazersActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("loading...");
         progressDialog.setCancelable(false);
-        progressDialog.show();
 
         Bundle extra = getIntent().getExtras();
         if (extra != null) {
@@ -66,12 +65,7 @@ public class StargazersActivity extends AppCompatActivity {
 
         gitHubAPI = GitHubAPIService.getService();
 
-        compositeDisposable.add(
-                gitHubAPI.getStargazers(owner, repo, currentPage)
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(AndroidSchedulers.mainThread())
-                        .subscribe(this::onResponse, this::onError));
-
+        loadNextPage(null);
     }
 
     private void initList(List<GitHubUser> userList) {

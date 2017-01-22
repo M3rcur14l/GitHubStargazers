@@ -34,8 +34,7 @@
             android:layout_marginBottom="6dp"
             android:hint="@string/enter_the_owner_name"
             android:inputType="text"
-            android:maxLines="1"
-            android:text="M3rcur14l" />
+            android:maxLines="1" />
 
         <EditText
             android:id="@+id/home_input_repo"
@@ -44,8 +43,7 @@
             android:layout_gravity="center_horizontal"
             android:hint="@string/enter_the_repo_name"
             android:inputType="text"
-            android:maxLines="1"
-            android:text="WearEye" />
+            android:maxLines="1" />
 
         <Button
             android:id="@+id/home_submit_button"
